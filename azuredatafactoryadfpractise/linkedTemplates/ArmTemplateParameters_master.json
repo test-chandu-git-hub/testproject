@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "azuredatafactoryadfpractise"
+		},
+		"AzureBlobStorage_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorageLinkService_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorageLinkService_properties_typeProperties_url": {
+			"value": "https://azuredatalakepractise.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "poc-sqlserver1.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "poc-testdb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "testadmin"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "adminserversql.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "admindb"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "testadmin"
+		},
+		"Httplinkservice_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"eventtrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/9b165aad-26d0-4a47-93fd-f17ab3fd0817/resourceGroups/AzureProjectPractise/providers/Microsoft.Storage/storageAccounts/azuredatalakepractise"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
