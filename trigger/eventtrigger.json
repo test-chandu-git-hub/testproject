@@ -1,0 +1,24 @@
+{
+	"name": "eventtrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "csvjsoneventtrigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/inputcsv/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/9b165aad-26d0-4a47-93fd-f17ab3fd0817/resourceGroups/AzureProjectPractise/providers/Microsoft.Storage/storageAccounts/azuredatalakepractise",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
