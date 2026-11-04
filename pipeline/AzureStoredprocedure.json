@@ -1,0 +1,44 @@
+{
+	"name": "AzureStoredprocedure",
+	"properties": {
+		"activities": [
+			{
+				"name": "Stored procedure1",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[SalesLT].[AddressIDDeleteStoredProcedure]",
+					"storedProcedureParameters": {
+						"addressID": {
+							"value": {
+								"value": "@pipeline().parameters.addressID",
+								"type": "Expression"
+							},
+							"type": "Int32"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureSqlDatabase2",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"addressID": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-11-03T05:57:15Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

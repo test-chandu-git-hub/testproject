@@ -1,0 +1,15 @@
+{
+	"name": "azuredatafactoryadfpractise",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "726eec48-04a8-42dd-b05b-8cea27e86279",
+		"tenantId": "2649d4c0-acdf-4fda-9426-044de866a5f0"
+	}
+}

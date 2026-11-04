@@ -1,0 +1,25 @@
+{
+	"name": "trigger-blob-sql",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "blob-sql",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 2,
+				"startTime": "2026-11-02T15:19:00",
+				"endTime": "2026-11-02T15:21:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
