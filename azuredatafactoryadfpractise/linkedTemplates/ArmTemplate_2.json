@@ -1339,9 +1339,9 @@
 				"typeProperties": {
 					"recurrence": {
 						"frequency": "Minute",
-						"interval": 10,
-						"startTime": "2026-11-04T17:38:00",
-						"endTime": "2026-11-04T17:40:00",
+						"interval": 1,
+						"startTime": "2026-11-04T17:42:00",
+						"endTime": "2026-11-04T17:44:00",
 						"timeZone": "India Standard Time"
 					}
 				}
